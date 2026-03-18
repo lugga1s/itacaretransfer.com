@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/transfersalvadortoitacare", "destination": "/transfersalvadortoitacare.html" },
+    { "source": "/transferitacaretosalvadorairport", "destination": "/transferitacaretosalvadorairport.html" }
+  ]
+}
