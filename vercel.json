@@ -1,7 +1,12 @@
 {
   "rewrites": [
     { "source": "/transfersalvadortoitacare", "destination": "/transfersalvadortoitacare.html" },
+    { "source": "/transfer-salvador-to-itacare", "destination": "/transfersalvadortoitacare.html" },
+    
     { "source": "/transferitacaretosalvadorairport", "destination": "/transferitacaretosalvadorairport.html" },
-    { "source": "/transferilheusairporttoitacare", "destination": "/transferilheusairporttoitacare.html" }
+    { "source": "/transfer-itacare-to-salvador-airport", "destination": "/transferitacaretosalvadorairport.html" },
+    
+    { "source": "/transferilheusairporttoitacare", "destination": "/transferilheusairporttoitacare.html" },
+    { "source": "/transfer-ilheus-airport-to-itacare", "destination": "/transferilheusairporttoitacare.html" }
   ]
 }
