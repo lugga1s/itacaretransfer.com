@@ -298,13 +298,31 @@
   .rc-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: var(--forest); line-height: 1.2; }
   .rc-desc { font-size: .83rem; color: var(--mist); line-height: 1.65; }
   .rc-tag {
-    margin-top: auto; padding-top: .5rem;
     display: inline-flex; align-items: center; gap: .3rem;
     background: var(--warm); border: 1px solid var(--border);
     border-radius: 100px; padding: .28rem .9rem;
     font-size: .7rem; font-weight: 600; color: var(--ochre);
     width: fit-content;
   }
+  .rc-footer {
+    margin-top: auto; padding-top: .7rem;
+    display: flex; align-items: center; gap: .5rem; flex-wrap: wrap;
+  }
+  .rc-wa-btn {
+    display: inline-flex; align-items: center; gap: .3rem;
+    background: #25D366; color: white;
+    font-size: .73rem; font-weight: 700;
+    padding: .32rem 1rem; border-radius: 100px;
+    text-decoration: none; white-space: nowrap;
+    transition: background .18s, transform .18s, box-shadow .18s;
+    box-shadow: 0 2px 8px rgba(37,211,102,.25);
+  }
+  .rc-wa-btn:hover { background: #1ebe5d; transform: translateY(-1px); box-shadow: 0 4px 14px rgba(37,211,102,.38); }
+  .rc-detail-link {
+    margin-left: auto; font-size: .72rem; font-weight: 500; color: var(--ocean);
+    text-decoration: none; white-space: nowrap; transition: color .18s;
+  }
+  .rc-detail-link:hover { color: var(--forest); text-decoration: underline; }
 
   /* ══════════════════
      LOCAL DESTINATIONS
@@ -688,36 +706,62 @@
     </div>
     <div class="routes-grid">
 
-      <a href="/transfer-ilheus-airport-to-itacare" class="rc featured reveal d1" style="text-decoration:none;color:inherit;">
+      <div class="rc featured reveal d1">
         <div class="rc-ico">✈️</div>
         <div class="rc-lbl">Itacaré ← →</div>
         <div class="rc-name">Ilhéus Airport <span style="font-size:.8em;font-weight:400;font-style:italic;">(IOS)</span></div>
         <p class="rc-desc">The closest airport to Itacaré. Direct pick-up at arrivals, drop-off at your pousada or hotel. Plenty of room for luggage.</p>
-        <span class="rc-tag">⭐ Most requested</span>
-      </a>
+        <div class="rc-footer">
+          <span class="rc-tag">⭐ Most requested</span>
+          <a href="https://wa.me/5562999027384?text=Hi!%20I'd%20like%20to%20book%20a%20transfer%20✈️%0A%0ARoute:%20Ilhéus%20Airport%20(IOS)%20%3C%3E%20Itacaré%0ADate:%20%0AFlight%20number:%20%0APick-up:%20%0ADrop-off%20(hotel%20/%20pousada):%20%0APassengers:%20%0ALuggage%20/%20surfboards:%20" target="_blank" class="rc-wa-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Book this route
+          </a>
+          <a href="/transfer-ilheus-airport-to-itacare" class="rc-detail-link">Details ↗</a>
+        </div>
+      </div>
 
       <div class="rc reveal d2">
         <div class="rc-ico">🏝️</div>
         <div class="rc-lbl">Itacaré ← →</div>
         <div class="rc-name">Morro de São Paulo</div>
         <p class="rc-desc">Drive to the Cairu ferry terminal, then hop on the boat to the island. We handle the logistics so you don't have to think about it.</p>
-        <span class="rc-tag">🌊 Island escape</span>
+        <div class="rc-footer">
+          <span class="rc-tag">🌊 Island escape</span>
+          <a href="https://wa.me/5562999027384?text=Hi!%20I'd%20like%20to%20book%20a%20transfer%20🏝️%0A%0ARoute:%20Itacaré%20%3C%3E%20Morro%20de%20São%20Paulo%0ADate:%20%0APick-up%20(address%20in%20Itacaré):%20%0ADrop-off%20(on%20the%20island):%20%0APassengers:%20%0ALuggage%20pieces:%20" target="_blank" class="rc-wa-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Book this route
+          </a>
+        </div>
       </div>
 
-      <a href="/transfer-salvador-to-itacare" class="rc reveal d3" style="text-decoration:none;color:inherit;">
+      <div class="rc reveal d3">
         <div class="rc-ico">🏙️</div>
         <div class="rc-lbl">Itacaré ← →</div>
         <div class="rc-name">Salvador, Bahia</div>
         <p class="rc-desc">Direct to Salvador Airport (SSA), your hotel in the city, or any address. Comfortable, non-stop ride — no bus transfers, no hassle.</p>
-        <span class="rc-tag">🛫 Includes SSA Airport</span>
-      </a>
+        <div class="rc-footer">
+          <span class="rc-tag">🛫 Includes SSA Airport</span>
+          <a href="https://wa.me/5562999027384?text=Hi!%20I'd%20like%20to%20book%20a%20transfer%20🏙️%0A%0ARoute:%20Itacaré%20%3C%3E%20Salvador%0ADate:%20%0APick-up:%20%0ADrop-off%20(hotel%20/%20SSA%20Airport%20/%20address):%20%0APassengers:%20%0AFlight%20number%20(if%20airport%20run):%20" target="_blank" class="rc-wa-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Book this route
+          </a>
+          <a href="/transfer-salvador-to-itacare" class="rc-detail-link">Details ↗</a>
+        </div>
+      </div>
 
       <div class="rc reveal d1">
         <div class="rc-ico">✈️</div>
         <div class="rc-lbl">Itacaré ← →</div>
         <div class="rc-name">Porto Seguro Airport <span style="font-size:.8em;font-weight:400;font-style:italic;">(BPS)</span></div>
         <p class="rc-desc">A great alternative for flights arriving from the south. We meet you at arrivals and take you directly to Itacaré.</p>
-        <span class="rc-tag">✈️ Southern option</span>
+        <div class="rc-footer">
+          <span class="rc-tag">✈️ Southern option</span>
+          <a href="https://wa.me/5562999027384?text=Hi!%20I'd%20like%20to%20book%20a%20transfer%20✈️%0A%0ARoute:%20Porto%20Seguro%20Airport%20(BPS)%20%3C%3E%20Itacaré%0ADate:%20%0AFlight%20number:%20%0APick-up:%20%0ADrop-off%20(hotel%20/%20address):%20%0APassengers:%20%0ALuggage:%20" target="_blank" class="rc-wa-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Book this route
+          </a>
+        </div>
       </div>
 
       <div class="rc reveal d2">
@@ -725,7 +769,13 @@
         <div class="rc-lbl">Itacaré ← →</div>
         <div class="rc-name">Barra Grande / Maraú</div>
         <p class="rc-desc">The dream beaches of Maraú Peninsula. Scenic drive through the jungle coast — one of the most beautiful roads in Bahia.</p>
-        <span class="rc-tag">🌿 Hidden paradise</span>
+        <div class="rc-footer">
+          <span class="rc-tag">🌿 Hidden paradise</span>
+          <a href="https://wa.me/5562999027384?text=Hi!%20I'd%20like%20to%20book%20a%20transfer%20🌴%0A%0ARoute:%20Itacaré%20%3C%3E%20Barra%20Grande%20/%20Maraú%0ADate:%20%0APick-up:%20%0ADrop-off%20(pousada%20/%20address):%20%0APassengers:%20%0ALuggage:%20" target="_blank" class="rc-wa-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Book this route
+          </a>
+        </div>
       </div>
 
       <div class="rc reveal d3">
@@ -733,7 +783,13 @@
         <div class="rc-lbl">Custom route?</div>
         <div class="rc-name">Just ask us</div>
         <p class="rc-desc">Heading somewhere not on the list? Send us a message — we cover all destinations across Bahia, including Boipeba, Trancoso, and beyond.</p>
-        <span class="rc-tag">💬 WhatsApp us</span>
+        <div class="rc-footer">
+          <span class="rc-tag">💬 WhatsApp us</span>
+          <a href="https://wa.me/5562999027384?text=Hi!%20I'd%20like%20to%20book%20a%20custom%20transfer%20🗺️%0A%0ARoute%20(from%20%3E%20to):%20%0ADate:%20%0APick-up:%20%0ADrop-off:%20%0APassengers:%20%0ALuggage:%20%0ANotes:%20" target="_blank" class="rc-wa-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Send message
+          </a>
+        </div>
       </div>
 
     </div>
