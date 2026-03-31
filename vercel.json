@@ -6,6 +6,8 @@
       "destination": "/transfer-itacare-to-salvador-airport.html" },
     { "source": "/transfer-salvador-to-itacare/:path*",
       "destination": "/transfer-salvador-to-itacare.html" },
+    { "source": "/porto-seguro-airport-to-itacare/:path*",
+      "destination": "/porto-seguro-airport-to-itacare.html" },
     { "source": "/status/:path*", "destination": "/api/status" }
   ]
 }
